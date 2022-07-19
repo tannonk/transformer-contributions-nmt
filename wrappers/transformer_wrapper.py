@@ -39,8 +39,8 @@ class FairseqTransformerHub(GeneratorHubInterface):
         hub_interface = TransformerModel.from_pretrained(checkpoint_dir, checkpoint_file, data_name_or_path)
         return cls(hub_interface.cfg, hub_interface.task, hub_interface.models)
     
-    def encode(self, sentence, dictionary):
-        raise NotImplementedError()
+    # def encode(self, sentence, dictionary):
+    #     raise NotImplementedError()
     
     def decode(self, tensor, dictionary, as_string=False):
         #tok = dictionary.string(tensor).split()
