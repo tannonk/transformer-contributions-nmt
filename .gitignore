@@ -20,3 +20,9 @@ tokenize_data_preprocess.sh
 m2m_analysis_copy.ipynb
 
 .vscode/
+
+
+.DS_Store
+._.DS_Store
+.ipynb_checkpoints/
+M2M_CKPT_DIR

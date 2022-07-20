@@ -81,7 +81,7 @@ def convert_bpe_word(splited_bpe_sent, splited_word_sent):
         #     # First token may use ▁
         #     word_to_bpe[word_i].append(bpe_i)
         # else:
-        if token.startswith("▁"):
+        if token.startswith("▁") or token.startswith('@@'):
             word_i += 1
             
         word_to_bpe[word_i].append(bpe_i)

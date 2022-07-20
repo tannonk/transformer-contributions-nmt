@@ -43,7 +43,7 @@ def visualize_alti(total_alti, source_sentence, target_sentence, predicted_sente
         
         df = pd.DataFrame(contributions_rollout_layer_np, columns = source_sentence_ + target_sentence_, index = predicted_sentence_)
 
-        sns.set(font_scale=1.2)
+        # sns.set(font_scale=0.8)
         sns.heatmap(df,cmap="Blues",square=True,ax=ax_main,cbar=False)
         ax_main.axvline(x = len(source_sentence_)-0.02, lw=1.5, linestyle = '--', color = 'grey')
         ax_main.set_xlabel('Source sentence | Target prefix', fontsize=17)
